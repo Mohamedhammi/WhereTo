@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.WereTo.GUI.EnseigneClientController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="207.0" style="-fx-background-color: #102026;">
+         <children>
+            <Pane prefHeight="69.0" prefWidth="217.0" style="-fx-background-color: #102026;">
+               <children>
+                  <Label layoutX="51.0" layoutY="19.0" text="Where To" textFill="WHITE">
+                     <font>
+                        <Font name="Jokerman" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutY="69.0" mnemonicParsing="false" onAction="#accueilbt" prefHeight="32.0" prefWidth="217.0" text="Acceuil">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutY="106.0" mnemonicParsing="false" onAction="#afficheRestaurant" prefHeight="32.0" prefWidth="217.0" text="Restaurant">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutY="180.0" mnemonicParsing="false" onAction="#afficheCinema" prefHeight="32.0" prefWidth="217.0" text="Cafe">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutY="143.0" mnemonicParsing="false" onAction="#afficheBar" prefHeight="25.0" prefWidth="217.0" text="Bar">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="217.0" prefHeight="400.0" prefWidth="534.0">
+         <children>
+            <AnchorPane prefHeight="171.0" prefWidth="534.0" />
+            <Accordion layoutX="7.0" layoutY="210.0" />
+            <AnchorPane layoutY="172.0" prefHeight="228.0" prefWidth="353.0">
+               <children>
+                  <Label layoutX="58.0" layoutY="14.0" prefHeight="57.0" prefWidth="273.0" text="Label" />
+                  <Label layoutX="58.0" layoutY="78.0" prefHeight="57.0" prefWidth="273.0" text="Label" />
+                  <TextArea layoutX="58.0" layoutY="148.0" prefHeight="48.0" prefWidth="273.0" text="Commentaire&#10;" />
+                  <Button layoutX="242.0" layoutY="196.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="89.0" text="Partager" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="353.0" layoutY="171.0" prefHeight="228.0" prefWidth="180.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

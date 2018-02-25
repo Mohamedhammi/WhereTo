@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="660.0" prefWidth="1016.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.WereTo.GUI.EnseigneInterfaceController">
+   <children>
+      <AnchorPane prefHeight="660.0" prefWidth="217.0" style="-fx-background-color: #102026;">
+         <children>
+            <Pane prefHeight="69.0" prefWidth="217.0" style="-fx-background-color: #102026;">
+               <children>
+                  <Label layoutX="51.0" layoutY="19.0" text="Where To" textFill="WHITE">
+                     <font>
+                        <Font name="Jokerman" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutY="69.0" mnemonicParsing="false" onAction="#accueilbt" prefHeight="32.0" prefWidth="217.0" text="Acceuil">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutY="106.0" mnemonicParsing="false" onAction="#afficheRestaurant" prefHeight="32.0" prefWidth="217.0" text="Restaurant">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutY="180.0" mnemonicParsing="false" onAction="#afficheCinema" prefHeight="32.0" prefWidth="217.0" text="Cafe">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutY="143.0" mnemonicParsing="false" onAction="#afficheBar" prefHeight="25.0" prefWidth="217.0" text="Bar">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="217.0" layoutY="-1.0" prefHeight="660.0" prefWidth="801.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="801.0">
+               <children>
+                  <ImageView fx:id="photo1" fitHeight="150.0" fitWidth="200.0" layoutX="44.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="photo2" fitHeight="150.0" fitWidth="200.0" layoutX="301.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="photo3" fitHeight="150.0" fitWidth="200.0" layoutX="570.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="-1.0" layoutY="200.0" prefHeight="60.0" prefWidth="801.0">
+               <children>
+                  <Label fx:id="nomEnseigne" layoutX="25.0" layoutY="15.0" prefHeight="32.0" prefWidth="233.0" text="Label" />
+                  <Label fx:id="descriptionEnseigne" layoutX="25.0" layoutY="47.0" prefHeight="94.0" prefWidth="598.0" text="Label" />
+                  <Button layoutX="717.0" layoutY="16.0" mnemonicParsing="false" text="Suivre" />
+                  <Button fx:id="btSignal" layoutX="717.0" layoutY="55.0" mnemonicParsing="false" onAction="#signalerEnseigne" text="Signal" />
+                  <Button layoutX="717.0" layoutY="94.0" mnemonicParsing="false" onAction="#noterEnseigne" prefHeight="31.0" prefWidth="61.0" text="Note" />
+                  <ComboBox fx:id="noteField" layoutX="652.0" layoutY="94.0" prefHeight="31.0" prefWidth="57.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="600.0" layoutY="330.0" prefHeight="330.0" prefWidth="201.0">
+               <children>
+                  <Label layoutX="11.0" layoutY="14.0" text="Adresse :" />
+                  <Label fx:id="adresseEnseigne" layoutX="87.0" layoutY="6.0" prefHeight="37.0" prefWidth="108.0" text="Label" />
+                  <Label layoutX="9.0" layoutY="55.0" text="Specialite :" />
+                  <Label fx:id="specialiteEnseigne" layoutX="87.0" layoutY="47.0" prefHeight="37.0" prefWidth="108.0" text="Label" />
+                  <Label layoutX="6.0" layoutY="105.0" text="Horaire :" />
+                  <Label fx:id="horaireEnseigne" layoutX="87.0" layoutY="97.0" prefHeight="37.0" prefWidth="108.0" text="Label" />
+                  <Label layoutX="10.0" layoutY="145.0" text="Numero :" />
+                  <Label fx:id="numTelEnseigne" layoutX="87.0" layoutY="137.0" prefHeight="37.0" prefWidth="108.0" text="Label" />
+                  <Label layoutX="67.0" layoutY="183.0" text="Note :" />
+                  <Label fx:id="noteEnseigne" layoutX="6.0" layoutY="216.0" prefHeight="94.0" prefWidth="191.0" text="Label" />
+               </children></AnchorPane>
+            <AnchorPane layoutY="330.0" prefHeight="330.0" prefWidth="598.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

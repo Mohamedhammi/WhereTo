@@ -1,0 +1,106 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package View.WereTo.GUI;
+
+import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.stage.Stage;
+
+/**
+ * FXML Controller class
+ *
+ * @author Mohamed El Hammi
+ */
+public class AccueilProprioController implements Initializable {
+
+
+    @FXML
+    private Button btProp;
+
+    /**
+     * Initializes the controller class.
+     */
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        // TODO
+    }    
+
+
+
+    @FXML
+    private void affichePropEnseigne(ActionEvent event) throws IOException{
+            FXMLLoader myLoader = new FXMLLoader(getClass().getResource("FormulaireEnseigne.fxml"));
+            Parent root = myLoader.load();
+            
+            Stage stage = new Stage();
+            stage.setTitle("Formulaire");
+            stage.setScene(new Scene(root));
+            stage.show();
+            // Hide this current window (if this is what you want)
+            ((Node)(event.getSource())).getScene().getWindow().hide();
+    }
+    
+    
+    @FXML
+    private void accueilbt(ActionEvent event) throws IOException {
+            FXMLLoader myLoader = new FXMLLoader(getClass().getResource("AccueilProprio.fxml"));
+            Parent root = myLoader.load();
+            
+            Stage stage = new Stage();
+            stage.setTitle("Formulaire");
+            stage.setScene(new Scene(root));
+            stage.show();
+            // Hide this current window (if this is what you want)
+            ((Node)(event.getSource())).getScene().getWindow().hide();
+    }
+        @FXML
+    private void afficheRestaurant(ActionEvent event) throws IOException{
+            FXMLLoader myLoader = new FXMLLoader(getClass().getResource("Restaurant.fxml"));
+            Parent root = myLoader.load();
+            
+            Stage stage = new Stage();
+            stage.setTitle("Formulaire");
+            stage.setScene(new Scene(root));
+            stage.show();
+            // Hide this current window (if this is what you want)
+            ((Node)(event.getSource())).getScene().getWindow().hide();
+    } 
+    
+    @FXML
+    private void afficheBar(ActionEvent event) throws IOException{
+            FXMLLoader myLoader = new FXMLLoader(getClass().getResource("Bar.fxml"));
+            Parent root = myLoader.load();
+            
+            Stage stage = new Stage();
+            stage.setTitle("Formulaire");
+            stage.setScene(new Scene(root));
+            stage.show();
+            // Hide this current window (if this is what you want)
+            ((Node)(event.getSource())).getScene().getWindow().hide();
+    }
+    
+    @FXML
+    private void afficheCinema(ActionEvent event) throws IOException{
+            FXMLLoader myLoader = new FXMLLoader(getClass().getResource("Cinema.fxml"));
+            Parent root = myLoader.load();
+            
+            Stage stage = new Stage();
+            stage.setTitle("Formulaire");
+            stage.setScene(new Scene(root));
+            stage.show();
+            // Hide this current window (if this is what you want)
+            ((Node)(event.getSource())).getScene().getWindow().hide();
+    } 
+}
